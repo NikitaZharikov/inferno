@@ -5,13 +5,486 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inferno | Main</title>
+    <title>Interno | Main</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header class="container">
+        <svg width="177" height="50" viewBox="0 0 177 50" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M44.88 39V38.6L45.6781 38.28C46.2101 38.0933 46.556 37.84 46.7156 37.52C46.9019 37.2 46.9949 36.7733 46.9949 36.24V15.36C46.9949 14.8267 46.9151 14.4 46.7555 14.08C46.5959 13.76 46.2367 13.5067 45.6781 13.32L44.88 13V12.6H55.1354V13L54.3373 13.32C53.8053 13.5067 53.4461 13.76 53.2599 14.08C53.1003 14.4 53.0205 14.8267 53.0205 15.36V36.24C53.0205 36.7733 53.1003 37.2 53.2599 37.52C53.4461 37.8133 53.8053 38.0667 54.3373 38.28L55.1354 38.6V39H44.88ZM56.8027 39V38.6L57.3613 38.44C58.2924 38.1733 58.758 37.52 58.758 36.48V23.96C58.758 23.3733 58.6648 22.9467 58.4787 22.68C58.2924 22.3867 57.9333 22.1867 57.4013 22.08L56.8027 21.92V21.52L63.6263 19.2L64.0254 19.6L64.3446 22C65.2757 21.1733 66.3264 20.4933 67.497 19.96C68.6675 19.4267 69.8247 19.16 70.9687 19.16C72.7245 19.16 74.0679 19.64 74.999 20.6C75.9567 21.56 76.4356 23.0267 76.4356 25V36.52C76.4356 37.56 76.941 38.2133 77.9519 38.48L78.3111 38.6V39H68.8937V38.6L69.4124 38.44C70.3435 38.1467 70.8091 37.4933 70.8091 36.48V23.72C70.8091 22.0133 69.9577 21.16 68.2552 21.16C67.0846 21.16 65.8077 21.7467 64.4244 22.92V36.52C64.4244 37.56 64.8899 38.2133 65.821 38.48L66.1802 38.6V39H56.8027ZM87.2592 39.6C85.5567 39.6 84.2265 39.1733 83.2688 38.32C82.3377 37.4667 81.8721 36.1067 81.8721 34.24V20.56H79.1187V20.16L80.0764 20C80.9012 19.8133 81.6062 19.5467 82.1914 19.2C82.8033 18.8533 83.4019 18.3867 83.9871 17.8L87.2592 14.16H87.6582L87.5385 19.76H92.0078V20.56H87.4986V34.96C87.4986 35.8933 87.6981 36.6 88.0972 37.08C88.5229 37.56 89.0549 37.8 89.6934 37.8C90.252 37.8 90.7442 37.6667 91.1698 37.4C91.5955 37.1067 92.0212 36.72 92.4467 36.24L92.8458 36.64C92.3138 37.5467 91.5822 38.2667 90.6511 38.8C89.72 39.3333 88.5894 39.6 87.2592 39.6ZM103.995 19.16C105.724 19.16 107.2 19.52 108.425 20.24C109.649 20.9333 110.579 21.8933 111.218 23.12C111.883 24.32 112.215 25.6933 112.215 27.24C112.215 27.5333 112.202 27.84 112.176 28.16C112.149 28.4533 112.096 28.72 112.016 28.96H100.124C100.151 31.84 100.656 33.92 101.641 35.2C102.651 36.4533 104.142 37.08 106.11 37.08C107.44 37.08 108.517 36.8667 109.342 36.44C110.167 36.0133 110.938 35.3867 111.657 34.56L112.056 34.92C111.231 36.3867 110.127 37.5333 108.744 38.36C107.387 39.1867 105.751 39.6 103.836 39.6C101.947 39.6 100.271 39.2 98.8075 38.4C97.3443 37.5733 96.2003 36.4 95.3757 34.88C94.551 33.36 94.1387 31.5467 94.1387 29.44C94.1387 27.2533 94.6175 25.4 95.5752 23.88C96.5329 22.3333 97.7566 21.16 99.2464 20.36C100.763 19.56 102.346 19.16 103.995 19.16ZM103.875 19.96C103.104 19.96 102.439 20.2 101.88 20.68C101.348 21.1333 100.923 21.96 100.603 23.16C100.311 24.3333 100.151 26 100.124 28.16H106.948C107.214 25.2533 107.108 23.16 106.629 21.88C106.15 20.6 105.232 19.96 103.875 19.96ZM114.204 39V38.6L114.802 38.44C115.335 38.28 115.694 38.04 115.88 37.72C116.093 37.4 116.199 36.9867 116.199 36.48V23.96C116.199 23.3733 116.093 22.9467 115.88 22.68C115.694 22.3867 115.335 22.1867 114.802 22.08L114.204 21.92V21.52L121.067 19.2L121.466 19.6L121.825 23.04V23.36C122.198 22.6133 122.677 21.9333 123.262 21.32C123.874 20.68 124.539 20.16 125.257 19.76C126.002 19.36 126.734 19.16 127.452 19.16C128.463 19.16 129.235 19.44 129.766 20C130.299 20.56 130.564 21.2667 130.564 22.12C130.564 23.0267 130.299 23.7333 129.766 24.24C129.261 24.72 128.649 24.96 127.931 24.96C126.813 24.96 125.83 24.4 124.978 23.28L124.898 23.2C124.633 22.8267 124.326 22.6267 123.98 22.6C123.635 22.5467 123.316 22.7067 123.022 23.08C122.757 23.32 122.531 23.6133 122.344 23.96C122.184 24.28 122.025 24.6533 121.865 25.08V36.24C121.865 37.3067 122.331 37.9733 123.262 38.24L124.539 38.6V39H114.204ZM131.818 39V38.6L132.377 38.44C133.308 38.1733 133.774 37.52 133.774 36.48V23.96C133.774 23.3733 133.68 22.9467 133.494 22.68C133.308 22.3867 132.949 22.1867 132.417 22.08L131.818 21.92V21.52L138.642 19.2L139.041 19.6L139.36 22C140.291 21.1733 141.341 20.4933 142.513 19.96C143.683 19.4267 144.84 19.16 145.984 19.16C147.74 19.16 149.083 19.64 150.015 20.6C150.972 21.56 151.451 23.0267 151.451 25V36.52C151.451 37.56 151.956 38.2133 152.968 38.48L153.327 38.6V39H143.909V38.6L144.428 38.44C145.359 38.1467 145.825 37.4933 145.825 36.48V23.72C145.825 22.0133 144.973 21.16 143.271 21.16C142.1 21.16 140.823 21.7467 139.44 22.92V36.52C139.44 37.56 139.905 38.2133 140.837 38.48L141.196 38.6V39H131.818ZM164.984 39.6C162.962 39.6 161.206 39.1867 159.716 38.36C158.226 37.5067 157.069 36.3067 156.245 34.76C155.447 33.2133 155.048 31.4 155.048 29.32C155.048 27.24 155.473 25.44 156.325 23.92C157.202 22.4 158.386 21.2267 159.876 20.4C161.392 19.5733 163.094 19.16 164.984 19.16C166.872 19.16 168.561 19.5733 170.052 20.4C171.541 21.2 172.711 22.36 173.563 23.88C174.441 25.4 174.88 27.2133 174.88 29.32C174.88 31.4267 174.467 33.2533 173.643 34.8C172.845 36.32 171.701 37.5067 170.211 38.36C168.748 39.1867 167.005 39.6 164.984 39.6ZM164.984 38.8C165.915 38.8 166.66 38.5333 167.218 38C167.777 37.4667 168.176 36.52 168.416 35.16C168.681 33.8 168.815 31.88 168.815 29.4C168.815 26.8933 168.681 24.96 168.416 23.6C168.176 22.24 167.777 21.2933 167.218 20.76C166.66 20.2267 165.915 19.96 164.984 19.96C164.052 19.96 163.294 20.2267 162.709 20.76C162.151 21.2933 161.738 22.24 161.472 23.6C161.233 24.96 161.113 26.8933 161.113 29.4C161.113 31.88 161.233 33.8 161.472 35.16C161.738 36.52 162.151 37.4667 162.709 38C163.294 38.5333 164.052 38.8 164.984 38.8Z"
+                fill="#292F36" />
+            <path
+                d="M0 42.0003H13.4588V32.499C13.4588 30.4853 15.0898 28.8543 17.1035 28.8543C19.1172 28.8543 20.7482 30.4853 20.7482 32.499V42.0003H33.9975V8C15.2211 8 0 23.2211 0 42.0003Z"
+                fill="#CDA274" />
+        </svg>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="header_nav_item">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="header_nav_item">About us</a>
+                </li>
+                <li>
+                    <a href="#" class="header_nav_item">Services</a>
+                </li>
+                <li>
+                    <a href="#" class="header_nav_item">Pages</a>
+                </li>
+                <li>
+                    <a href="#" class="header_nav_item">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
+    <section class="top">
+        <section class="top_content container">
+            <h1 class="top_content_header">
+                Let's Create Your Dream Interior
+            </h1>
+            <p class="top_content_text">
+                The world needs innovators and problem solvers who turn challenges into greater opportunities
+            </p>
+            <button class="top_content_button">Get Started</button>
+        </section>
+    </section>
+
+    <main>
+        <section class="service container">
+            <article class="service_item">
+                <h3 class="service_item_header">Interior Design</h3>
+                <p class="service_item_text">Enhancing the interior to achieve a healthier environment for the people
+                    using
+                    right space</p>
+                <button class="service_item_button">View More</button>
+            </article>
+
+            <article class="service_item">
+                <h3 class="service_item_header">Furniture</h3>
+                <p class="service_item_text">Movable articles that are used to make a room or building suitable for
+                    living
+                    or working</p>
+                <button class="service_item_button">View More</button>
+            </article>
+
+            <article class="service_item">
+                <h3 class="service_item_header">Flooring</h3>
+                <p class="service_item_text">Thin object any finished material applied over a floor structure to provide
+                    a
+                    walking surface</p>
+                <button class="service_item_button">View More</button>
+            </article>
+        </section>
+
+        <section class="call_us container">
+            <h2 class="call_us_header">
+                We Tackle The Most Challenging Designs
+            </h2>
+            <p class="call_us_text">
+                The world needs innovators and problem solvers who turn challenges into greater
+                opportunities. We have an insatiable curiosity about transformative trends challenging the status
+            </p>
+            <article class="call_us_phone">
+                <svg width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M0 46.5C0 20.8188 20.8188 0 46.5 0C72.1812 0 93 20.8188 93 46.5C93 72.1812 72.1812 93 46.5 93C20.8188 93 0 72.1812 0 46.5Z"
+                        fill="#F4F0EC" />
+                    <path
+                        d="M62.0012 55.0749C60.7796 53.8442 57.8211 52.0482 56.3857 51.3243C54.5164 50.3828 54.3625 50.3059 52.8933 51.3974C51.9133 52.1258 51.2617 52.7766 50.1148 52.532C48.9678 52.2874 46.4754 50.9082 44.2931 48.7329C42.1107 46.5576 40.6514 43.9931 40.4061 42.8501C40.1607 41.7071 40.8222 41.0632 41.5438 40.081C42.5607 38.6964 42.4838 38.4657 41.6145 36.5965C40.9368 35.1427 39.0883 32.2121 37.8529 30.9968C36.5313 29.6914 36.5313 29.9222 35.6798 30.276C34.9865 30.5677 34.3214 30.9222 33.6928 31.3352C32.462 32.1529 31.7789 32.8321 31.3012 33.8528C30.8235 34.8735 30.6089 37.2665 33.0759 41.7478C35.5429 46.2292 37.2737 48.5206 40.8561 52.0928C44.4385 55.6649 47.1931 57.5856 51.2202 59.844C56.2018 62.6339 58.1126 62.09 59.1365 61.6131C60.1604 61.1362 60.8427 60.4593 61.662 59.2286C62.076 58.6011 62.4314 57.9368 62.7235 57.2441C63.0781 56.3957 63.3089 56.3957 62.0012 55.0749Z"
+                        stroke="#CDA274" stroke-width="2" stroke-miterlimit="10" />
+                </svg>
+                <div class="call_us_phone_number">
+
+                    <a href="tel:+79876543211" class="call_us_phone_number_link">
+                        +7 987 654 32 11
+                    </a>
+                    <span class="call_us_phone_number_text">
+                        Call Us Anytime
+                    </span>
+
+                </div>
+            </article>
+            <button class="call_us_button">
+                Get Free Estimate
+            </button>
+        </section>
+
+        <section class="callback container">
+            <h2 class="callback_header">
+                What the People Thinks About Interno
+            </h2>
+            <section class="callback_reviews">
+                <article class="callback_reviews_item">
+                    <div class="callback_reviews_item_user_info">
+                        <img class="callback_reviews_item_user_info_photo" src="img/user_photo_1.png" alt="user">
+                        <div class="callback_reviews_item_user_info_description">
+                            <h3 class="callback_reviews_item_user_info_username">
+                                Lisa Clairton
+                            </h3>
+                            <span class="callback_reviews_item_user_info_location">
+                                New York, USA
+                            </span>
+                        </div>
+                    </div>
+                    <p class="callback_reviews_item_text">We selected Interno interior because of rigorous design
+                        background & education
+                    </p>
+                </article>
+
+                <article class="callback_reviews_item">
+                    <div class="callback_reviews_item_user_info">
+                        <img class="callback_reviews_item_user_info_photo" src="img/user_photo_2.png" alt="user">
+                        <div class="callback_reviews_item_user_info_description">
+                            <h3 class="callback_reviews_item_user_info_username">
+                                David Knight
+                            </h3>
+                            <span class="callback_reviews_item_user_info_location">
+                                Sydney, Australia
+                            </span>
+                        </div>
+                    </div>
+                    <p class="callback_reviews_item_text">The team exceeded our expectations and emerged as leaders of
+                        our project's
+                    </p>
+                </article>
+
+                <article class="callback_reviews_item">
+                    <div class="callback_reviews_item_user_info">
+                        <img class="callback_reviews_item_user_info_photo" src="img/user_photo_3.png" alt="user">
+                        <div class="callback_reviews_item_user_info_description">
+                            <h3 class="callback_reviews_item_user_info_username">
+                                Anna Frank
+                            </h3>
+                            <span class="callback_reviews_item_user_info_location">
+                                Paris, France
+                            </span>
+                        </div>
+
+                    </div>
+                    <p class="callback_reviews_item_text">
+                        They balanced the architectural vision and the project realities beautifully
+                    </p>
+                </article>
+            </section>
+        </section>
+
+        <section class="list_brands container">
+            <img src="svg/brand_1.svg" alt="brand">
+            <img src="svg/brand_2.svg" alt="brand">
+            <img src="svg/brand_3.svg" alt="brand">
+            <img src="svg/brand_4.svg" alt="brand">
+            <img src="svg/brand_5.svg" alt="brand">
+        </section>
+
+        <section class="projects container">
+            <div class="projects_header">
+                <h2 class="projects_h2">
+                    Recent Projects
+                </h2>
+                <p class="projects_text">
+                    With tools to make every part of your process more human and a support team
+                    excited to help you, getting started with us never been easier
+                </p>
+            </div>
+
+            <section class="projects_list">
+                <article class="projects_list_item">
+                    <img src="img/project_1.png" alt="project">
+                    <div class="projects_list_item_discription">
+                        <div class="projects_list_item_discription_text">
+                            <h3 class="projects_list_item_discription_h3">
+                                Winery Dry Creek Building
+                            </h3>
+                            <span class="projects_list_item_discription_span">
+                                Art Modern
+                            </span>
+                        </div>
+                        <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.609375" width="70" height="70" rx="35" fill="#F4F0EC" />
+                            <path d="M32 42.2188L38 35.2188L32 28.2188" stroke="#292F36" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </article>
+
+
+                <article class="projects_list_item">
+                    <img src="img/project_2.png" alt="project">
+                    <div class="projects_list_item_discription">
+                        <div class="projects_list_item_discription_text">
+                            <h3 class="projects_list_item_discription_h3">
+                                Creative Workplace Design
+                            </h3>
+                            <span class="projects_list_item_discription_span">
+                                Minimalist
+                            </span>
+                        </div>
+                        <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.609375" width="70" height="70" rx="35" fill="#F4F0EC" />
+                            <path d="M32 42.2188L38 35.2188L32 28.2188" stroke="#292F36" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+
+                </article>
+                <article class="projects_list_item">
+                    <img src="img/project_3.png" alt="project">
+                    <div class="projects_list_item_discription">
+                        <div class="projects_list_item_discription_text">
+                            <h3 class="projects_list_item_discription_h3">
+                                Bedroom Interior Pot Work
+                            </h3>
+                            <span class="projects_list_item_discription_span">
+                                Modern
+                            </span>
+                        </div>
+
+                        <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.609375" width="70" height="70" rx="35" fill="#F4F0EC" />
+                            <path d="M32 42.2188L38 35.2188L32 28.2188" stroke="#292F36" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </article>
+
+                <article class="projects_list_item">
+                    <img src="img/project_4.png" alt="project">
+                    <div class="projects_list_item_discription">
+                        <div class="projects_list_item_discription_text">
+                            <h3 class="projects_list_item_discription_h3">
+                                Light Ambience Sepia Design
+                            </h3>
+                            <span class="projects_list_item_discription_span">
+                                Scandinavian
+                            </span>
+                        </div>
+
+                        <svg width="70" height="71" viewBox="0 0 70 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="0.609375" width="70" height="70" rx="35" fill="#F4F0EC" />
+                            <path d="M32 42.2188L38 35.2188L32 28.2188" stroke="#292F36" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <section class="stats">
+            <div class="container">
+                <article class="stats_item">
+                    <span class="stats_item_number">12</span>
+                    <span class="stats_item_text">Years Of Experiance</span>
+                </article>
+                <article class="stats_item">
+                    <span class="stats_item_number">5K</span>
+                    <span class="stats_item_text">Success Project</span>
+                </article>
+                <article class="stats_item">
+                    <span class="stats_item_number">1K</span>
+                    <span class="stats_item_text">Active Project</span>
+                </article>
+                <article class="stats_item">
+                    <span class="stats_item_number">4K</span>
+                    <span class="stats_item_text">Happy Customers</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="blogs container">
+            <div class="blogs_header">
+                <h2 class="blogs_header_h2">
+                    Recent Blogs
+                </h2>
+                <p class="blogs_header_text">
+                    Get updates about our latest trends and techniques used in interior design project works
+                </p>
+            </div>
+            <section class="blogs_list">
+                <!-- 1 -->
+                <article class="blogs_list_item">
+                    <div class="blogs_list_item_img">
+                        <div class="blogs_list_item_img_plate">
+                            Kitchen Design
+                        </div>
+                    </div>
+                    <h3 class="blogs_list_item_header">
+                        Residential Interior Designer In New York, USA
+                    </h3>
+                    <div class="blogs_list_item_date">
+                        <span class="blogs_list_item_date_text">November 23, 2021</span>
+                        <a href=""><img src="svg/blogs_list_view.svg" alt="view"></a>
+                    </div>
+                </article>
+                <!-- 2 -->
+                <article class="blogs_list_item">
+                    <div class="blogs_list_item_img">
+                        <div class="blogs_list_item_img_plate">
+                            Living Room
+                        </div>
+                    </div>
+                    <h3 class="blogs_list_item_header">
+                        How To Choose The Best Wall Art & Decor House?
+                    </h3>
+                    <div class="blogs_list_item_date">
+                        <span class="blogs_list_item_date_text">November 23, 2021</span>
+                        <a href=""><img src="svg/blogs_list_view.svg" alt="view"></a>
+                    </div>
+                </article>
+                <!-- 3 -->
+                <article class="blogs_list_item">
+                    <div class="blogs_list_item_img">
+                        <div class="blogs_list_item_img_plate">
+                            Minimalist Interior
+                        </div>
+                    </div>
+                    <h3 class="blogs_list_item_header">
+                        Tips To Increase The Interior Value Of Your House
+                    </h3>
+                    <div class="blogs_list_item_date">
+                        <span class="blogs_list_item_date_text">November 23, 2021</span>
+                        <a href=""><img src="svg/blogs_list_view.svg" alt="view"></a>
+                    </div>
+                </article>
+                <!-- 4 -->
+                <article class="blogs_list_item">
+                    <div class="blogs_list_item_img">
+                        <div class="blogs_list_item_img_plate">
+                            Kitchen Design
+                        </div>
+                    </div>
+                    <h3 class="blogs_list_item_header">
+                        Best Solution For Any Office & Business Interior
+                    </h3>
+                    <div class="blogs_list_item_date">
+                        <span class="blogs_list_item_date_text">November 23, 2021</span>
+                        <a href=""><img src="svg/blogs_list_view.svg" alt="view"></a>
+                    </div>
+                </article>
+                <!-- 5 -->
+                <article class="blogs_list_item">
+                    <div class="blogs_list_item_img">
+                        <div class="blogs_list_item_img_plate">
+                            Living Room
+                        </div>
+                    </div>
+                    <h3 class="blogs_list_item_header">
+                        Get Solution For Building Construction Work
+                    </h3>
+                    <div class="blogs_list_item_date">
+                        <span class="blogs_list_item_date_text">November 23, 2021</span>
+                        <a href=""><img src="svg/blogs_list_view.svg" alt="view"></a>
+                    </div>
+                </article>
+                <!-- 6 -->
+                <article class="blogs_list_item">
+                    <div class="blogs_list_item_img">
+                        <div class="blogs_list_item_img_plate">
+                            Minimalist Interior
+                        </div>
+                    </div>
+                    <h3 class="blogs_list_item_header">
+                        Attain The Best Finish For The Kitchen Cabinets
+                    </h3>
+                    <div class="blogs_list_item_date">
+                        <span class="blogs_list_item_date_text">November 23, 2021</span>
+                        <a href=""><img src="svg/blogs_list_view.svg" alt="view"></a>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <section class="wanna_join container">
+        <h2 class="wanna_join_header">
+            Wanna join the interno?
+        </h2>
+        <span class="wanna_join_span">
+            Contact Us & Get a Free Consultation
+        </span>
+        <button class="wanna_join_button">Connect with us</button>
+    </section>
+
+    <footer>
+        <section class="footer_content container">
+            <div class="footer_content_logo">
+                <img src="svg/logo_interno.svg" alt="logo">
+                <p class="footer_content_logo_text">We are the leading architect and interior design firm in the world.
+                </p>
+                <div class="footer_content_logo_social">
+                    <svg width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="30" height="30" transform="translate(0 0.796875)" fill="white" />
+                        <path
+                            d="M22.1367 12.418C22.8398 11.8906 23.4727 11.2578 23.9648 10.5195C23.332 10.8008 22.5938 11.0117 21.8555 11.082C22.6289 10.625 23.1914 9.92188 23.4727 9.04297C22.7695 9.46484 21.9609 9.78125 21.1523 9.95703C20.4492 9.21875 19.5 8.79688 18.4453 8.79688C16.4062 8.79688 14.7539 10.4492 14.7539 12.4883C14.7539 12.7695 14.7891 13.0508 14.8594 13.332C11.8008 13.1563 9.05859 11.6797 7.23047 9.46484C6.91406 9.99219 6.73828 10.625 6.73828 11.3281C6.73828 12.5938 7.37109 13.7188 8.39062 14.3867C7.79297 14.3516 7.19531 14.2109 6.70312 13.9297V13.9648C6.70312 15.7578 7.96875 17.2344 9.65625 17.5859C9.375 17.6562 9.02344 17.7266 8.70703 17.7266C8.46094 17.7266 8.25 17.6914 8.00391 17.6562C8.46094 19.1328 9.83203 20.1875 11.4492 20.2227C10.1836 21.207 8.60156 21.8047 6.87891 21.8047C6.5625 21.8047 6.28125 21.7695 6 21.7344C7.61719 22.7891 9.55078 23.3867 11.6602 23.3867C18.4453 23.3867 22.1367 17.7969 22.1367 12.9102C22.1367 12.7344 22.1367 12.5938 22.1367 12.418Z"
+                            fill="#292F36" />
+                    </svg>
+
+                    <svg width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="30" height="30" transform="translate(0 0.796875)" fill="white" />
+                        <path
+                            d="M19.0352 16.9219L19.5273 13.6875H16.3984V11.5781C16.3984 10.6641 16.8203 9.82032 18.2266 9.82032H19.668V7.04297C19.668 7.04297 18.3672 6.79688 17.1367 6.79688C14.5703 6.79688 12.8828 8.37891 12.8828 11.1914V13.6875H10V16.9219H12.8828V24.7969H16.3984V16.9219H19.0352Z"
+                            fill="#292F36" />
+                    </svg>
+
+                    <svg width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="30" height="30" transform="translate(0 0.796875)" fill="white" />
+                        <path
+                            d="M10.5156 23.5117V13H7.24609V23.5117H10.5156ZM8.86328 11.5938C9.91797 11.5938 10.7617 10.7148 10.7617 9.66016C10.7617 8.64063 9.91797 7.79688 8.86328 7.79688C7.84375 7.79688 7 8.64063 7 9.66016C7 10.7148 7.84375 11.5938 8.86328 11.5938ZM22.7148 23.5117H22.75V17.7461C22.75 14.9336 22.1172 12.7539 18.8125 12.7539C17.2305 12.7539 16.1758 13.6328 15.7188 14.4414H15.6836V13H12.5547V23.5117H15.8242V18.3086C15.8242 16.9375 16.0703 15.6367 17.7578 15.6367C19.4453 15.6367 19.4805 17.1836 19.4805 18.4141V23.5117H22.7148Z"
+                            fill="#292F36" />
+                    </svg>
+
+                    <svg width="30" height="31" viewBox="0 0 30 31" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="30" height="30" transform="translate(0 0.796875)" fill="white" />
+                        <path
+                            d="M15.3311 11.8232C12.9561 11.8232 11.0635 13.7529 11.0635 16.0908C11.0635 18.4658 12.9561 20.3584 15.3311 20.3584C17.669 20.3584 19.5987 18.4658 19.5987 16.0908C19.5987 13.7529 17.669 11.8232 15.3311 11.8232ZM15.3311 18.874C13.8096 18.874 12.5479 17.6494 12.5479 16.0908C12.5479 14.5693 13.7725 13.3447 15.3311 13.3447C16.8526 13.3447 18.0772 14.5693 18.0772 16.0908C18.0772 17.6494 16.8526 18.874 15.3311 18.874ZM20.7491 11.6748C20.7491 11.1182 20.3038 10.6729 19.7471 10.6729C19.1905 10.6729 18.7452 11.1182 18.7452 11.6748C18.7452 12.2314 19.1905 12.6768 19.7471 12.6768C20.3038 12.6768 20.7491 12.2314 20.7491 11.6748ZM23.5694 12.6768C23.4952 11.3408 23.1983 10.1533 22.2334 9.18848C21.2686 8.22363 20.0811 7.92676 18.7452 7.85254C17.3721 7.77832 13.2529 7.77832 11.8799 7.85254C10.5439 7.92676 9.39355 8.22363 8.3916 9.18848C7.42676 10.1533 7.12988 11.3408 7.05566 12.6768C6.98145 14.0498 6.98145 18.1689 7.05566 19.542C7.12988 20.8779 7.42676 22.0283 8.3916 23.0303C9.39355 23.9951 10.5439 24.292 11.8799 24.3662C13.2529 24.4404 17.3721 24.4404 18.7452 24.3662C20.0811 24.292 21.2686 23.9951 22.2334 23.0303C23.1983 22.0283 23.4952 20.8779 23.5694 19.542C23.6436 18.1689 23.6436 14.0498 23.5694 12.6768ZM21.7881 20.9893C21.5284 21.7314 20.9346 22.2881 20.2295 22.585C19.1163 23.0303 16.5186 22.9189 15.3311 22.9189C14.1064 22.9189 11.5088 23.0303 10.4326 22.585C9.69043 22.2881 9.13378 21.7314 8.83691 20.9893C8.3916 19.9131 8.50293 17.3154 8.50293 16.0908C8.50293 14.9033 8.3916 12.3057 8.83691 11.1924C9.13378 10.4873 9.69043 9.93066 10.4326 9.63379C11.5088 9.18848 14.1064 9.2998 15.3311 9.2998C16.5186 9.2998 19.1163 9.18848 20.2295 9.63379C20.9346 9.89355 21.4913 10.4873 21.7881 11.1924C22.2334 12.3057 22.1221 14.9033 22.1221 16.0908C22.1221 17.3154 22.2334 19.9131 21.7881 20.9893Z"
+                            fill="#292F36" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="footer_content_pages">
+                <h4 class="footer_content_pages_header">Pages</h4>
+                <ul>
+                    <li class="footer_content_pages_item">Style Guide</li>
+                    <li class="footer_content_pages_item">Protected</li>
+                    <li class="footer_content_pages_item">Licenses</li>
+                    <li class="footer_content_pages_item">Changelog</li>
+                    <li class="footer_content_pages_item">404</li>
+                </ul>
+            </div>
+
+            <div class="footer_content_explore">
+                <h4 class="footer_content_explore_header">Explore</h4>
+                <ul>
+                    <li class="footer_content_explore_item">About Us</li>
+                    <li class="footer_content_explore_item">Recent Blog</li>
+                    <li class="footer_content_explore_item">Pricing Plan</li>
+                    <li class="footer_content_explore_item">Our Projects</li>
+                    <li class="footer_content_explore_item">Contact Us</li>
+                </ul>
+            </div>
+
+            <div class="footer_content_contacts">
+                <h4 class="footer_content_contacts_header">Contacts</h4>
+                <ul>
+                    <li class="footer_content_contacts_item">53, East Birchwood Ave. Brooklyn, New York 11201, USA.</li>
+                    <li class="footer_content_contacts_item">
+                        <a href="mailto:contact@interno.com">
+                            contact@interno.com
+                        </a>
+                    </li>
+                    <li class="footer_content_contacts_item">
+                        <a href="tel:+79876543211">
+                            +7 987 654 32 11
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
