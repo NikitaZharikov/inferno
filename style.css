@@ -39,30 +39,40 @@ h4 {
     margin: 0;
 }
 
-body{
+body {
     margin-top: 22px;
 }
 
-header{
+header {
     height: 62px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header_menu_list{
+header svg {
+    filter: brightness(100%);
+    transition: ease 0.2s;
+}
+
+header svg:hover {
+    filter: brightness(110%);
+}
+
+.header_menu_list {
     display: flex;
 }
 
-.header_menu_list_item{
+.header_menu_list_item {
     margin-right: 40px;
 }
 
-body > header > nav > ul > li:nth-child(5){
+
+body>header>nav>ul>li:nth-child(5) {
     margin-right: 0px;
 }
 
-.header_menu_list_item_link{
+.header_menu_list_item_link {
     font-family: 'jost';
     font-style: normal;
     font-weight: 400;
@@ -70,9 +80,14 @@ body > header > nav > ul > li:nth-child(5){
     line-height: 29px;
     letter-spacing: 0.4px;
     color: #292F36;
+    transition: ease 0.2s;
 }
 
-.top{
+.header_menu_list_item_link:hover {
+    color: #CDA274;
+}
+
+.top {
     margin-top: 22px;
     min-height: 831px;
     background-image: url(img/hero_img.png);
@@ -80,13 +95,13 @@ body > header > nav > ul > li:nth-child(5){
     background-repeat: no-repeat;
 }
 
-.top_content{
+.top_content {
     min-height: 831px;
     display: flex;
     align-items: center;
 }
 
-.top_content_header{
+.top_content_header {
     font-family: 'dm serif display';
     font-style: normal;
     font-weight: 400;
@@ -97,7 +112,7 @@ body > header > nav > ul > li:nth-child(5){
     max-width: 650px;
 }
 
-.top_content_p{
+.top_content_p {
     margin-top: 16px;
     max-width: 509px;
     font-family: 'jost';
@@ -111,7 +126,7 @@ body > header > nav > ul > li:nth-child(5){
 
 .top_content_button,
 .call_us_button,
-.wanna_join_button{
+.wanna_join_button {
     margin-top: 32px;
     min-width: 203px;
     padding: 23px 36px;
@@ -131,15 +146,25 @@ body > header > nav > ul > li:nth-child(5){
     background-repeat: no-repeat;
     background-position: center right 36px;
     border: none;
+    transition: ease 0.2s;
 }
 
-.service{
+.top_content_button:hover {
+    box-shadow: 0px 0px 50px rgba(205, 162, 116, 0.6);
+}
+
+.call_us_button:hover {
+    box-shadow: 0px 0px 50px rgba(205, 162, 116, 0.6);
+
+}
+
+.service {
     margin-top: 120px;
     display: flex;
     justify-content: space-between;
 }
 
-.service_item{
+.service_item {
     max-height: 295px;
     max-width: 377px;
     box-sizing: border-box;
@@ -148,9 +173,14 @@ body > header > nav > ul > li:nth-child(5){
     flex-direction: column;
     align-items: center;
     border-radius: 16px;
+    transition: ease 0.2s;
 }
 
-.service_item_header{
+.service_item:hover {
+    box-shadow: 0px 0px 50px rgba(205, 162, 116, 0.5);
+}
+
+.service_item_header {
     font-family: 'dm serif display';
     font-style: normal;
     font-weight: 400;
@@ -161,7 +191,7 @@ body > header > nav > ul > li:nth-child(5){
     color: #292F36;
 }
 
-.service_item_text{
+.service_item_text {
     font-family: 'jost';
     font-style: normal;
     font-weight: 400;
@@ -173,7 +203,7 @@ body > header > nav > ul > li:nth-child(5){
     margin: 24px 0 48px 0;
 }
 
-.service_item_button{
+.service_item_button {
     padding: 8px 12px;
     min-width: 155px;
     font-family: 'Jost';
@@ -192,7 +222,7 @@ body > header > nav > ul > li:nth-child(5){
     border: none;
 }
 
-.call_us{
+.call_us {
     margin-top: 120px;
     min-height: 635px;
     background-image: url(img/call_us_img.png);
@@ -202,11 +232,11 @@ body > header > nav > ul > li:nth-child(5){
     align-items: center;
 }
 
-.call_us_block{
+.call_us_block {
     max-width: 531px;
 }
 
-.call_us_header{
+.call_us_header {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
@@ -217,7 +247,7 @@ body > header > nav > ul > li:nth-child(5){
     max-width: 450px;
 }
 
-.call_us_text{
+.call_us_text {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -228,20 +258,20 @@ body > header > nav > ul > li:nth-child(5){
     margin: 32px 0 32px 0;
 }
 
-.call_us_phone{
+.call_us_phone {
     display: flex;
     align-items: center;
     margin-bottom: 48px;
 }
 
-.call_us_phone_number{
+.call_us_phone_number {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
 }
 
 .call_us_phone_number_link,
-.call_us_phone_number_text{
+.call_us_phone_number_text {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -252,15 +282,15 @@ body > header > nav > ul > li:nth-child(5){
     margin-bottom: 4px;
 }
 
-.call_us_phone_number_text{
+.call_us_phone_number_text {
     margin-bottom: 0;
 }
 
-.call_us_button{
+.call_us_button {
     min-width: 255px;
 }
 
-.callback{
+.callback {
     margin-top: 120px;
     padding: 99px 50px;
     background: #F4F0EC;
@@ -271,7 +301,7 @@ body > header > nav > ul > li:nth-child(5){
     box-sizing: border-box;
 }
 
-.callback_header{
+.callback_header {
     max-width: 546px;
     font-family: 'DM Serif Display';
     font-style: normal;
@@ -283,14 +313,14 @@ body > header > nav > ul > li:nth-child(5){
     color: #292F36;
 }
 
-.callback_reviews{
+.callback_reviews {
     margin-top: 60px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.callback_reviews_item{
+.callback_reviews_item {
     box-sizing: border-box;
     max-width: 340px;
     padding: 48px;
@@ -298,17 +328,17 @@ body > header > nav > ul > li:nth-child(5){
     border-radius: 32px;
 }
 
-.callback_reviews_item_user_info{
+.callback_reviews_item_user_info {
     display: flex;
     align-items: center;
 }
 
-.callback_reviews_item_user_info_photo{
+.callback_reviews_item_user_info_photo {
     border-radius: 50%;
     margin-right: 20px;
 }
 
-.callback_reviews_item_user_info_username{
+.callback_reviews_item_user_info_username {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
@@ -318,7 +348,7 @@ body > header > nav > ul > li:nth-child(5){
     color: #292F36;
 }
 
-.callback_reviews_item_user_info_location{
+.callback_reviews_item_user_info_location {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -328,7 +358,7 @@ body > header > nav > ul > li:nth-child(5){
     color: #4D5053;
 }
 
-.callback_reviews_item_text{
+.callback_reviews_item_text {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -339,13 +369,13 @@ body > header > nav > ul > li:nth-child(5){
     margin-top: 25px;
 }
 
-.list_brands{
+.list_brands {
     margin-top: 120px;
     display: flex;
     justify-content: space-between;
 }
 
-.projects{
+.projects {
     margin-top: 120px;
     display: flex;
     flex-direction: column;
@@ -353,7 +383,7 @@ body > header > nav > ul > li:nth-child(5){
 }
 
 .projects_h2,
-.blogs_header_h2{
+.blogs_header_h2 {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
@@ -365,7 +395,7 @@ body > header > nav > ul > li:nth-child(5){
 }
 
 .projects_text,
-.blogs_header_text{
+.blogs_header_text {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -378,22 +408,22 @@ body > header > nav > ul > li:nth-child(5){
     max-width: 748px;
 }
 
-.projects_list{
+.projects_list {
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.projects_list_item{
+.projects_list_item {
     margin-bottom: 60px;
 }
 
-.projects_list_item_image{
+.projects_list_item_image {
     border-radius: 0px 80px 0px 0px;
 }
 
-.projects_list_item_discription_h3{
+.projects_list_item_discription_h3 {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
@@ -403,7 +433,7 @@ body > header > nav > ul > li:nth-child(5){
     color: #292F36;
 }
 
-.projects_list_item_discription_span{
+.projects_list_item_discription_span {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -413,40 +443,40 @@ body > header > nav > ul > li:nth-child(5){
     color: #4D5053;
 }
 
-body > main > section.projects.container > section > article:nth-child(3){
+body>main>section.projects.container>section>article:nth-child(3) {
     margin-bottom: 0;
 }
 
-body > main > section.projects.container > section > article:nth-child(4){
+body>main>section.projects.container>section>article:nth-child(4) {
     margin-bottom: 0;
 }
 
-.projects_list_item_discription{
+.projects_list_item_discription {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 32px;
 }
 
-.stats{
+.stats {
     margin-top: 160px;
     background-color: #F4F0EC;
     padding: 150px 191px;
     box-sizing: border-box;
 }
 
-.stats_numbers{
+.stats_numbers {
     display: flex;
     justify-content: space-between;
 }
 
-.stats_numbers_item{
+.stats_numbers_item {
     display: flex;
     flex-direction: column;
     position: relative;
 }
 
-.stats_item_numbers_item_number{
+.stats_item_numbers_item_number {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
@@ -457,7 +487,7 @@ body > main > section.projects.container > section > article:nth-child(4){
     color: #CDA274;
 }
 
-.stats_item_numbers_item_text{
+.stats_item_numbers_item_text {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -469,7 +499,7 @@ body > main > section.projects.container > section > article:nth-child(4){
     margin-top: 24px;
 }
 
-body > main > section.stats > div > article:nth-child(1)::after{
+body>main>section.stats>div>article:nth-child(1)::after {
     content: '';
     position: absolute;
     width: 1px;
@@ -479,7 +509,7 @@ body > main > section.stats > div > article:nth-child(1)::after{
     right: -80px;
 }
 
-body > main > section.stats > div > article:nth-child(2)::after{
+body>main>section.stats>div>article:nth-child(2)::after {
     content: '';
     position: absolute;
     width: 1px;
@@ -489,7 +519,7 @@ body > main > section.stats > div > article:nth-child(2)::after{
     right: -80px;
 }
 
-body > main > section.stats > div > article:nth-child(3)::after{
+body>main>section.stats>div>article:nth-child(3)::after {
     content: '';
     position: absolute;
     width: 1px;
@@ -499,25 +529,25 @@ body > main > section.stats > div > article:nth-child(3)::after{
     right: -80px;
 }
 
-.blogs{
+.blogs {
     margin-top: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.blogs_header{
+.blogs_header {
     max-width: 557px;
 }
 
-.blogs_list{
+.blogs_list {
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.blogs_list_item{
+.blogs_list_item {
     max-width: 387px;
     box-sizing: border-box;
     padding: 21px 21px 42px 21px;
@@ -527,25 +557,27 @@ body > main > section.stats > div > article:nth-child(3)::after{
     margin-bottom: 40px;
 }
 
-body > main > section.blogs.container > section > article:nth-child(4){
-    margin-bottom: 0;
-}
-body > main > section.blogs.container > section > article:nth-child(5){
-    margin-bottom: 0;
-}
-body > main > section.blogs.container > section > article:nth-child(6){
+body>main>section.blogs.container>section>article:nth-child(4) {
     margin-bottom: 0;
 }
 
-.blogs_list_item_image_png{
+body>main>section.blogs.container>section>article:nth-child(5) {
+    margin-bottom: 0;
+}
+
+body>main>section.blogs.container>section>article:nth-child(6) {
+    margin-bottom: 0;
+}
+
+.blogs_list_item_image_png {
     border-radius: 45px 45px 0px 0px;
 }
 
-.blogs_list_item_image{
+.blogs_list_item_image {
     position: relative;
 }
 
-.blogs_list_item_image_plate{
+.blogs_list_item_image_plate {
     position: absolute;
     top: 240px;
     left: 20px;
@@ -554,7 +586,7 @@ body > main > section.blogs.container > section > article:nth-child(6){
     border-radius: 8px 8px 8px 0px;
 }
 
-.blogs_list_item_header{
+.blogs_list_item_header {
     max-width: 334px;
     font-family: 'DM Serif Display';
     font-style: normal;
@@ -567,13 +599,13 @@ body > main > section.blogs.container > section > article:nth-child(6){
     margin-bottom: 19px;
 }
 
-.blogs_list_item_date{
+.blogs_list_item_date {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.blogs_list_item_date_text{
+.blogs_list_item_date_text {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -583,7 +615,7 @@ body > main > section.blogs.container > section > article:nth-child(6){
     color: #4D5053;
 }
 
-.wanna_join{
+.wanna_join {
     margin-top: 120px;
     background: #292F36;
     border-radius: 70px;
@@ -592,13 +624,13 @@ body > main > section.blogs.container > section > article:nth-child(6){
     justify-content: center;
 }
 
-.wanna_join_content{
+.wanna_join_content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.wanna_join_header{
+.wanna_join_header {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
@@ -609,7 +641,7 @@ body > main > section.blogs.container > section > article:nth-child(6){
     color: #FFFFFF;
 }
 
-.wanna_join_span{
+.wanna_join_span {
     margin-top: 16px;
     font-family: 'Jost';
     font-style: normal;
@@ -621,25 +653,25 @@ body > main > section.blogs.container > section > article:nth-child(6){
     color: #FFFFFF;
 }
 
-.wanna_join_button{
+.wanna_join_button {
     min-width: 234px;
     background-color: #CDA274;
     background-image: url(svg/arrow_right_white.svg);
 }
 
-footer{
+footer {
     margin-top: 160px;
     background-color: #F4F0EC;
     padding: 50px 0 0 0;
 }
 
-.footer_content{
+.footer_content {
     display: flex;
     justify-content: space-between;
 }
 
 
-.footer_content_logo_text{
+.footer_content_logo_text {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -651,7 +683,7 @@ footer{
     margin: 24px 0 36px 0;
 }
 
-.footer_content_logo_social{
+.footer_content_logo_social {
     max-width: 168px;
     display: flex;
     justify-content: space-between;
@@ -659,7 +691,7 @@ footer{
 
 .footer_content_pages_header,
 .footer_content_explore_header,
-.footer_content_contacts_header{
+.footer_content_contacts_header {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
@@ -672,7 +704,7 @@ footer{
 
 .footer_content_pages_item,
 .footer_content_explore_item,
-.footer_content_contacts_item{
+.footer_content_contacts_item {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
@@ -683,15 +715,15 @@ footer{
     margin-bottom: 30px;
 }
 
-.footer_content_contacts_item a{
+.footer_content_contacts_item a {
     color: #292F36;
 }
 
-.footer_content_contacts{
+.footer_content_contacts {
     max-width: 321px;
 }
 
-.all_rights{
+.all_rights {
     margin-top: 90px;
     padding: 19px 0 19px 0;
     display: flex;
@@ -700,7 +732,7 @@ footer{
 }
 
 .all_rights_text,
-.all_rights_year{
+.all_rights_year {
     font-family: 'Jost';
     font-style: normal;
     font-weight: 400;
